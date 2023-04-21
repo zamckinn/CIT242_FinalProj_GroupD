@@ -1,0 +1,33 @@
+﻿@model HomeTaskModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Here are your Tasks</a></h1>
+</div>
+<div class>
+<center>
+<table>
+        <thead>
+            <tr>
+                <th>Task ID</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Tasks t in @Model.Tasks)
+            {
+                <tr>
+                    <td>@t.TaskID</td>
+                    <td>@t.Description</td>
+                    <td>@t.StartDate</td>
+                    <td>@t.EndDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </center>
+</div>

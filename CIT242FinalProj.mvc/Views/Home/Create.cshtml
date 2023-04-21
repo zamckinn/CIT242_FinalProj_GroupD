@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+    <h1>Create Task</h1>
+    <form action="/Create/Input" method="post">
+        <label for="inputField">Task Number:</label>
+        <input type="number" id="TaskID" name="TaskID" required>
+
+        <label for="inputField">Description:</label>
+        <input type="text" id="Description" name="Description" required>
+
+        <label for="inputField">Start Date:</label>
+        <input type="date" id="StartDate" name="StartDate" required>
+
+        <label for="inputField">End Date:</label>
+        <input type="date" id="EndDate" name="EndDate" required>
+
+        <label for="Completed-Uncompleted">Completed or Uncompleted:</label>
+        <input type="checkbox" id="Completed" name="Completed">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>

@@ -1,0 +1,12 @@
+# Final Project
+
+## Purpose/Functionality of the Application
+This application is meant to be a task tracking application that takes inputs from various users who use the app to track activities.The main feature of this application is the scoring system that is paired with the task tracking functionality. Once a task is completed or a a player has a streak of tasks they will recieve a score which will advance them on a scoreboard which compares them to other users of the application. This application is attempting to be a new more fun way of task management as opposed to other task managment applications that do not give incentive to finish tasks this one will reward users via points to compete against other people, thus pushing users to try and be better than other users.
+
+## Layout of Application
+The application is based around several pages and a database as well as a function linked to the scoring system. The pages that are involved within the project are the login page(not present in this build).A homepage which consists of notifications of follow requests or status of sent follow requests as well as a view of your task. A view page which will show the user the scoreboard so that they can see their rankings, the scoreboard is connected to the "score" field within the User table of the database. The create page will allow users to create a task by making a start/end date as well a description, this is then put into the Task table in the database and is assigned to the user who made it via the UserID foriegn key field. The settings page will allow the user to change the UI of the website (font, wallpaper, etc.) as well as view/change their email preference. Finally the user profile page will allow the user to view their information such as email, date of birth, and phone number these are all fields from the User table, along with this it will allow the user to view their friend's list and send a friend request to someone based on their username due to time and outside factors however, this page is not present within this build of the application.
+
+## Layout of work
+Zachary McKinney - database creation, data connection (data models and datacontext), homepage razor/model creation
+Nathaniel Jett - creation and settings page, project partially based off of intial idea
+Glody Tshikunga - scoreboard razor/model creation, project based off of intial idea
